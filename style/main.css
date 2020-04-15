@@ -424,21 +424,7 @@ hr {
       from {width: 115px; height:115px; margin-top: -4px; margin-left: -4px;}
       to {width: 107px; height: 107px; margin-top: 0; margin-left: 0;}
     }
-  .tile.tile-unstable .tile-inner {
-    -webkit-animation-name: shake; 
-    -webkit-animation-duration: 0.1s; 
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-
-    -moz-animation-name: shake; 
-    -moz-animation-duration: 0.1s; 
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-  }
+ 
   .tile .tile-inner span.mass {
     vertical-align: super;
     font-size: 30px;
@@ -539,13 +525,22 @@ hr {
         font-size: 25px; } }
   .tile-512 .element,
   .tile-1024 .element,
-  .tile.tile-super .tile-inner {
+  .tile.tile-512 .tile-inner, .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
+    background: #edcf72;
     box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
     @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
+      .tile.tile-512 .tile-inner, .tile.tile-1024 .tile-inner {
         font-size: 10px; } }
+.tile-2048 .element,
+.tile-super .element,
+.tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner {
+color: #f9f6f2;
+background: #edc22e;
+box-shadow: 0 0 30px 10px #edc22e, inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+@media screen and (max-width: 520px) {
+.tile.tile-2048 .tile-inner, .tile.tile-super .tile-inner {
+font-size: 10px; } }
 
 @-webkit-keyframes appear {
   0% {
