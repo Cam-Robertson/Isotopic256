@@ -135,7 +135,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   //if (tile.isDud)
     //classes.push("tile-isDud");
 
-  if (tile.value > 256) classes.push("tile-super");
+  if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
